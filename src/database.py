@@ -36,6 +36,7 @@ def prepare_database(delete_existing: Union[bool, callable], settings):
 
 def get_db():
     from main import settings
+
     db = sessionmaker(autocommit=False, autoflush=False, bind=create_engine(settings.database_url))
     try:
         yield db

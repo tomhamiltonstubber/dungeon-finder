@@ -4,7 +4,6 @@ from typing import Optional
 from pydantic import BaseSettings
 from starlette.templating import Jinja2Templates
 
-
 THIS_DIR = Path(__file__).parent.resolve()
 
 

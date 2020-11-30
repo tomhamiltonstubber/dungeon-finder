@@ -3,15 +3,14 @@ from pathlib import Path
 import uvicorn
 from fastapi import FastAPI
 from fastapi.routing import APIRoute
-
 from starlette.responses import HTMLResponse
 from starlette.routing import Mount
+from starlette.staticfiles import StaticFiles
 
-from src.logs import setup_logging
 from src import views
 from src.database import prepare_database
+from src.logs import setup_logging
 from src.settings import Settings
-from starlette.staticfiles import StaticFiles
 
 THIS_DIR = Path(__file__).parent.resolve()
 
