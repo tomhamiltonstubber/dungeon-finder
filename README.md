@@ -1,5 +1,5 @@
 ![CI](https://github.com/tomhamiltonstubber/dungeon-finder/workflows/CI/badge.svg)
-[![coverage](https://codecov.io/gh/tomhamiltonstubber/dungeon-finder/branch/master/graph/badge.svg)](https://codecov.io/gh/tomhamiltonstubber/dungeon-finder)
+[![Coverage](https://codecov.io/gh/tomhamiltonstubber/dungeon-finder/branch/main/graph/badge.svg?token=39JVMX4W60)](https://codecov.io/gh/tomhamiltonstubber/dungeon-finder)
 
 # Dungeon Finder
 
