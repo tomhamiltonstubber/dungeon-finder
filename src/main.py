@@ -7,9 +7,10 @@ from fastapi.routing import APIRoute
 from starlette.responses import HTMLResponse
 from starlette.routing import Mount
 
-import views
-from database import Base, engine
-from settings import Settings
+from src.logs import setup_logging
+from src import views
+from src.database import prepare_database
+from src.settings import Settings
 from starlette.staticfiles import StaticFiles
 
 THIS_DIR = Path(__file__).parent.resolve()
@@ -22,8 +23,9 @@ routes = [
 
 settings = Settings()
 
-Base.metadata.create_all(bind=engine)
+engine = prepare_database(delete_existing=False, settings=settings)
 app = FastAPI(debug=settings.debug, routes=routes)
+setup_logging()
 
 
 # For running locally

@@ -2,9 +2,9 @@ from fastapi import Depends
 from sqlalchemy.orm import Session
 from starlette.requests import Request
 
-from models import Game
-from settings import Settings
-from utils import get_db
+from src.database import get_db
+from src.models import Game
+from src.settings import Settings
 
 
 async def index(request: Request):

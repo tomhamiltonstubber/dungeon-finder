@@ -31,3 +31,9 @@ test:
 reset-db:
 	psql -h localhost -U postgres -c "DROP DATABASE IF EXISTS dungeonfinder"
 	psql -h localhost -U postgres -c "CREATE DATABASE dungeonfinder"
+
+
+.PHONY: reset-test-db
+reset-test-db:
+	psql -h localhost -U postgres -c "DROP DATABASE IF EXISTS dungeonfinder_test"
+	psql -h localhost -U postgres -c "CREATE DATABASE dungeonfinder_test"
