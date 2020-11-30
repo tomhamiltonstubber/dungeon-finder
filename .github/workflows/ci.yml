@@ -38,6 +38,8 @@ jobs:
     - name: lint
       run: make lint
 
+    - run: make reset-test-db
+
     - name: test
       run: make test
 
