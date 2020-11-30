@@ -1,3 +1,5 @@
+![CI](https://github.com/tomhamiltonstubber/dungeon-finder/workflows/CI/badge.svg)
+
 # Dungeon Finder
 
 Dungeon Finder (TBC) will be a web app built by @codetopixels and @tomhamiltonstubber to provide an easy way for 
