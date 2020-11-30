@@ -25,7 +25,7 @@ lint:
 
 .PHONY: test
 test:
-	pytest tests/
+	pytest tests/ --cov=src
 
 .PHONY: reset-db
 reset-db:
